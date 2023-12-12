@@ -18,3 +18,13 @@ data class Article(
     val publishedAt: String,
     val content: String
 )
+
+{
+    override fun toString(): String {
+        return "SOURCE::: ${source.name} \n" +
+               "TITLE::: $title \n" +
+               "DESCRIPTION::: $description \n" +
+               "PUBLISHED_AT::: $publishedAt \n" +
+               "======================================"
+    }
+}
